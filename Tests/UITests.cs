@@ -55,9 +55,9 @@ namespace NUnitTestProject1
         [Test]
         public void Return_FirstUniqueChar()
         {
-            var result = UiHelper.getFirstUnique("Abcbac  ");
+            var result = UiHelper.getFirstUnique("Abcbacf  ");
             result.Should().NotBeNull();
-            result.Should().Be('c');
+            result.Should().Be('f');
         }
 
         [Test]
