@@ -4,7 +4,6 @@ pipeline {
   environment {
     CI = 'true'
     DOTNET_CLI_TELEMETRY_OPTOUT = '1'
-    # Set headless/chrome only if your tests actually use them
     HEADLESS = 'true'
     BROWSER  = 'chrome'
   }
