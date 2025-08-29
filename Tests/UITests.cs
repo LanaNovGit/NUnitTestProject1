@@ -81,7 +81,8 @@ namespace NUnitTestProject1
         public void Test2()
         {
             _driver.Navigate().GoToUrl("https://www.linkedin.com/");
-            _helper.UntilVisibleLambadaBased(By.XPath(""));
+            _helper.UntilVisibleLambadaBased(By.XPath("//a[contains(.,'Sign in')][1]")).Click();
+            _helper.UntilUrlContains("guest_homepage-basic_nav-header-signin");
         }
 
         [Test]
